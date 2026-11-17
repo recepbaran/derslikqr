@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kılavuz e-Derslik İndir</title>
+<style>
+  :root{--lacivert:#1b3f6b;--turkuaz:#3ea3b5}
+  body{margin:0;font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#f3f6f9;color:#1b2a3a;
+       min-height:100vh;display:flex;align-items:center;justify-content:center;padding:16px;box-sizing:border-box}
+  .kart{background:#fff;border-radius:20px;box-shadow:0 6px 24px rgba(0,0,0,.08);padding:28px 22px;max-width:380px;width:100%;text-align:center}
+  h1{color:var(--lacivert);font-size:24px;margin:0 0 6px}
+  p{margin:0 0 22px;color:#5a6b7c;font-size:15px}
+  a.btn{display:block;padding:15px;border-radius:14px;text-decoration:none;font-weight:700;font-size:16px;margin-bottom:12px;color:#fff}
+  .ios{background:#000}.android{background:var(--lacivert)}
+</style>
+<script>
+  (function(){
+    var ua = navigator.userAgent || "";
+    var ios = "https://apps.apple.com/tr/app/k%C4%B1lavuz-e-derslik/id6754758904?l=tr";
+    var android = "https://play.google.com/store/apps/details?id=tr.bel.kocaeli.eDerslik";
+    var iPadOS = navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1;
+    if (/iPhone|iPad|iPod/i.test(ua) || iPadOS) location.replace(ios);
+    else if (/Android/i.test(ua)) location.replace(android);
+  })();
+</script>
+</head>
+<body>
+  <div class="kart">
+    <h1>Kılavuz e-Derslik</h1>
+    <p>Bir tıkla gelecek. Uygulamayı cihazınıza indirin.</p>
+    <a class="btn ios" href="https://apps.apple.com/tr/app/k%C4%B1lavuz-e-derslik/id6754758904?l=tr">App Store'dan İndir</a>
+    <a class="btn android" href="https://play.google.com/store/apps/details?id=tr.bel.kocaeli.eDerslik">Google Play'den İndir</a>
+  </div>
+</body>
